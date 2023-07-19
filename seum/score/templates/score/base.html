@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>세움학원</title>
+  <link rel="stylesheet" href={% static 'score/css/style.css' %}>
+</head>
+<body>
+  <header>
+    <h1>
+      <img src={% static 'score/images/logo.png' %} id="logo">
+      <a href="/">세움학원 채점 사이트</a>
+    </h1>
+  </header>
+  <nav>
+    <ul>
+      {% block booknav %}
+      {% endblock booknav %}
+    </ul>
+  </nav>
+  <hr>
+  {% block main %}
+  {% endblock main %}
+
+</body>
+</html>

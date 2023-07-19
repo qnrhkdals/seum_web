@@ -1,0 +1,107 @@
+@font-face {
+    font-family: 'Arita-Bold';
+    src: url('../fonts/Arita-Bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Arita-SemiBold';
+    src: url('../fonts/Arita-SemiBold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Arita-Medium';
+    src: url('../fonts/Arita-Medium.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Arita-Buri-Hairline';
+    src: url('../fonts/Arita-Buri-Hairline.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Arita-Buri-Light';
+    src: url('../fonts/Arita-Buri-Light.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Bombaram';
+    src: url('../fonts/Bombaram.woff') format('woff');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    display: flex;
+    font-size: 40px;
+    align-items: center;
+}
+
+body {
+    text-align: center;
+    font-family: Bombaram;
+}
+
+nav {
+    margin: 10px auto;
+    font-family: Arita-SemiBold;
+    text-align: center;
+}
+
+li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+ul {
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+p {
+    line-height: 35px;
+}
+
+.navlink {
+    color: black;
+    transition: color 0.3s ease-in-out;
+}
+
+.navlink:hover {
+    color: dodgerblue;
+}
+
+.homework_announce {
+    border-bottom: 1px solid;
+}
+
+.book {
+    border-right: 1px solid;
+}
+
+#logo {
+    height: 80px;
+    margin-right: 30px;
+}
+
+
+#main {
+    font-size: 20px;
+    font-family: Arita-Buri-Light;
+}
+
+#homework {
+    width: 80%;
+    height: 100px;
+    text-align: center;
+    margin: auto;
+}
+
+#homework tr {
+    height: 40px;
+}

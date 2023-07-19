@@ -1,0 +1,36 @@
+{% extends './base.html' %}
+{% load static %}
+
+
+{% block booknav %}
+  {% for book in books %}
+    <li><a href="{{book.id}}" class="navlink">{{book.name}}</a></li>
+  {% endfor %}
+{% endblock booknav %}
+
+{% block main %}
+  <p id="main">
+    세움학원 고등수학 채점을 위한 사이트입니다.<br>
+    정오 여부를 알려드릴테니 카톡으로 보내주시길 바랍니다(qnggggg).<br>
+    모든 기록은 로그가 남아요.<br>
+    (제출을 여러번 했다는 것을 내가 알 수 있답니다^^)
+  </p>
+  <table id="homework">
+    <tr>
+      <p><td colspan="2" class="homework_announce">숙제 ({{deadline.date}})</td></p>
+    </tr>
+    <tr align="center" >
+      <td class="homework_announce" class="book">책</td>
+      <td class="homework_announce">범위</td>
+    </tr>
+    {% for book in books %}
+    <tr>
+      <td class="book">{{book.name}}</td>
+      <td>{{book.min_num}}~{{book.max_num}}</td>
+    </tr>
+    {% endfor %}
+  </table>
+{% endblock main %}
+
+</body>
+</html>
